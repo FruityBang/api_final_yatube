@@ -31,10 +31,15 @@ python3 manage.py runserver
 Примеры.
 
 Доступные эндпоинты:
+
 http://127.0.0.1:8000/api/v1/posts/
+
 http://127.0.0.1:8000/api/v1/groups/
+
 http://127.0.0.1:8000/api/v1/follow/
+
 http://127.0.0.1:8000/api/v1/jwt/
+
 
 Запросы:
 
