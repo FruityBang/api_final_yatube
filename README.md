@@ -30,17 +30,6 @@ python3 manage.py runserver
 
 Примеры.
 
-Доступные эндпоинты: http://127.0.0.1:8000/api/v1/posts/ http://127.0.0.1:8000/api/v1/groups/ http://127.0.0.1:8000/api/v1/follow/ http://127.0.0.1:8000/api/v1/jwt/
-
-Запросы:
-
-POST http://127.0.0.1:8000/api/v1/posts/ { "text": "string", "image": "string", "group": 0 }
-
-POST http://127.0.0.1:8000/api/v1/posts/{post_id}/comments/ { "text": "string" }
-
-POST http://127.0.0.1:8000/api/v1/follow/ { "following": "string" }
-
-
 Доступные эндпоинты:
 http://127.0.0.1:8000/api/v1/posts/
 http://127.0.0.1:8000/api/v1/groups/
