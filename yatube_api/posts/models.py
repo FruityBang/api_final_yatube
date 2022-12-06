@@ -21,11 +21,14 @@ class Post(models.Model):
     image = models.ImageField(
         upload_to='posts/', null=True, blank=True)
     group = models.ForeignKey(
-        Group, on_delete=models.CASCADE, related_name='posts',
+        Group, on_delete=models.SET_NULL, related_name='posts',
         blank=True, null=True)
 
+    class Meta:
+        ordering = ('pub_date',)
+
     def __str__(self):
-        return self.text
+        return f'Text: {self.text[:10]}, author: {self.author}'
 
 
 class Comment(models.Model):
