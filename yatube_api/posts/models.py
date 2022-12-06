@@ -28,7 +28,7 @@ class Post(models.Model):
         ordering = ('pub_date',)
 
     def __str__(self):
-        return f'Text: {self.text[:10]}, author: {self.author}'
+        return f'Text: {self.text[:4]}, author: {self.author.username}'
 
 
 class Comment(models.Model):
